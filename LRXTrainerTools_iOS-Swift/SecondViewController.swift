@@ -19,19 +19,19 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var tableView: UITableView!
     
     @IBAction func toggleStopwatch(stopwatchButton: UIButton) {
-        // Press Stop
+        // Stop
         if running {
             
             running = false
             stopwatch.stop()
             timeLog.append(stopwatch.elapsedTimeAsString())
-            self.tableView.reloadData()
+            tableView.reloadData()
             
             // Change text to "Start"
             stopwatchButton.setTitle("Start", forState: .Normal)
             stopwatchButton.setTitleColor(UIColor.purpleColor(), forState: .Normal)
         }
-        // Press Start
+        // Start
         else {
             
             running = true
@@ -44,11 +44,23 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         }
     }
     
+    @IBAction func clearAll(sender: UIButton) {
+        timeLog.removeAll()
+        tableView.reloadData()
+    }
+    
+    @IBAction func clearLast(sender: UIButton) {
+        timeLog.removeLast()
+        tableView.reloadData()
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as UITableViewCell
-       
         
         let row = indexPath.row
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
+        cell.preservesSuperviewLayoutMargins = false
         cell.textLabel?.text = String(row + 1)
         cell.detailTextLabel?.text = timeLog[row]
         
@@ -75,6 +87,8 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         stopwatchLabel.font = UIFont.monospacedDigitSystemFontOfSize(60, weight: UIFontWeightThin)
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+        tableView.separatorInset = UIEdgeInsetsZero
     }
     
     override func didReceiveMemoryWarning() {

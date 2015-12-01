@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "78BDBF43B95FCDAA86297D1C1B968F316694685A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "78BDBF43B95FCDAA86297D1C1B968F316694685A" : 0,
+    "159EB6F2878B9FEB3D15282C3D76C7A0F50D0FBC" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FE3604AA-B05F-4D9D-B5D2-1A50B41C31A6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "78BDBF43B95FCDAA86297D1C1B968F316694685A" : "LRXTrainerTools_iOS-Swift\/",
+    "159EB6F2878B9FEB3D15282C3D76C7A0F50D0FBC" : "metronome-swift\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LRXTrainerTools_iOS-Swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LRXTrainerTools_iOS-Swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Group4Capstone\/metronome-swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "159EB6F2878B9FEB3D15282C3D76C7A0F50D0FBC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/bryanjw\/LRXTrainerTools_iOS-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "78BDBF43B95FCDAA86297D1C1B968F316694685A"
+    }
+  ]
+}

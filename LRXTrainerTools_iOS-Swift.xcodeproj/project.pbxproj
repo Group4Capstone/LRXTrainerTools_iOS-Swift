@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		931042D91C0E16AA0091F71F /* metronomeClick.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 931042D81C0E16AA0091F71F /* metronomeClick.mp3 */; };
 		9315F8141C0D23DA0013F363 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9315F8131C0D23DA0013F363 /* AppDelegate.swift */; };
 		9315F8161C0D23DA0013F363 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9315F8151C0D23DA0013F363 /* FirstViewController.swift */; };
 		9315F8181C0D23DA0013F363 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9315F8171C0D23DA0013F363 /* SecondViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		931042D81C0E16AA0091F71F /* metronomeClick.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = metronomeClick.mp3; path = "../../metronome-swift/Metronome-Swift/metronomeClick.mp3"; sourceTree = "<group>"; };
 		9315F8101C0D23DA0013F363 /* LRXTrainerTools_iOS-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LRXTrainerTools_iOS-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9315F8131C0D23DA0013F363 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9315F8151C0D23DA0013F363 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				9315F8131C0D23DA0013F363 /* AppDelegate.swift */,
 				9315F8151C0D23DA0013F363 /* FirstViewController.swift */,
+				931042D81C0E16AA0091F71F /* metronomeClick.mp3 */,
 				9315F8171C0D23DA0013F363 /* SecondViewController.swift */,
 				9315F8271C0D3F350013F363 /* Stopwatch.swift */,
 				9315F8191C0D23DA0013F363 /* Main.storyboard */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				931042D91C0E16AA0091F71F /* metronomeClick.mp3 in Resources */,
 				9315F8201C0D23DA0013F363 /* LaunchScreen.storyboard in Resources */,
 				9315F81D1C0D23DA0013F363 /* Assets.xcassets in Resources */,
 				9315F81B1C0D23DA0013F363 /* Main.storyboard in Resources */,
@@ -292,6 +296,7 @@
 				9315F8261C0D23DB0013F363 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
