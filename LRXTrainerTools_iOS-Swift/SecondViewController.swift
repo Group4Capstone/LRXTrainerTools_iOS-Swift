@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
+class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     let stopwatch = Stopwatch()
     var running = false
@@ -17,6 +17,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet var stopwatchLabel: UILabel!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var stopwatchButton: UIButton!
     
     @IBAction func toggleStopwatch(stopwatchButton: UIButton) {
         // Stop
@@ -50,8 +51,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func clearLast(sender: UIButton) {
-        timeLog.removeLast()
-        tableView.reloadData()
+        if timeLog.count > 0 {
+            timeLog.removeLast()
+            tableView.reloadData()
+        }
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -85,6 +88,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
         stopwatch.callback = self.tick
         stopwatchLabel.font = UIFont.monospacedDigitSystemFontOfSize(60, weight: UIFontWeightThin)
+        
         tableView.delegate = self
         tableView.dataSource = self
         tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
