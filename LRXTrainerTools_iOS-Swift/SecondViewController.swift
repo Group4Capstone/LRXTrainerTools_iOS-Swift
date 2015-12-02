@@ -81,18 +81,22 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     func tick() {
         stopwatchLabel.text = stopwatch.elapsedTimeAsString()
     }
+    
+    func loadStyle() {
+        
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        stopwatch.callback = self.tick
-        stopwatchLabel.font = UIFont.monospacedDigitSystemFontOfSize(60, weight: UIFontWeightThin)
-        
         tableView.delegate = self
         tableView.dataSource = self
+        stopwatch.callback = self.tick
+        
         tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
         tableView.separatorInset = UIEdgeInsetsZero
+        stopwatchLabel.font = UIFont.monospacedDigitSystemFontOfSize(60, weight: UIFontWeightThin)
     }
     
     override func didReceiveMemoryWarning() {

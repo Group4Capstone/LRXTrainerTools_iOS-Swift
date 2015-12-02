@@ -111,8 +111,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Metronome" image="first" id="acW-dT-cKf"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="metronomeButton" destination="tI2-UJ-fGh" id="Gf4-rO-we7"/>
                         <outlet property="tempoLabel" destination="sAa-jb-Zor" id="MNv-f1-ZeW"/>
@@ -285,8 +283,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Stopwatch" image="second" id="cPa-gy-q4n"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
                         <outlet property="stopwatchButton" destination="phm-V1-Scs" id="bfk-ab-2dn"/>
                         <outlet property="stopwatchLabel" destination="e8g-y7-qMR" id="O7U-5c-krP"/>
@@ -301,9 +297,6 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
